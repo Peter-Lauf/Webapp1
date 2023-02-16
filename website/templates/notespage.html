@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+
+<div class="notespage-wrapper">
+    <div class="notes-form-wrapper">
+        <h1 id="notes-title">Notes</h1>
+        <ul class="list-group-notes"
+            id="notes">
+            {% for note in user.notes %}
+            <li class="list-group-item">
+                {{ note.date }} - {{ note.data }}
+                <button type="button"
+                        class="close"
+                        onclick="deleteNote({{ note.id }})">
+                    <span aria-hidden="true">&times;</span>
+
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+        <form id="notes-box" method="POST">
+            <textarea name="note"
+                      id="note"
+                      class="form-control"></textarea>
+            <br />
+            <div style="text-align:center">
+                <button type="submit"
+                        class="btn-notes">
+                    Add Note
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="clock">
+        <div class="hand hours"></div>
+        <div class="hand minutes"></div>
+        <div class="hand seconds"></div>
+        <div class="point"></div>
+        <div class="marker">
+            <span class="marker__1"></span>
+            <span class="marker__2"></span>
+            <span class="marker__3"></span>
+            <span class="marker__4"></span>
+        </div>
+    </div>
+</div>
+{% endblock %}
