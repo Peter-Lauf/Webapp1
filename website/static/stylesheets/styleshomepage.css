@@ -15,10 +15,13 @@
   margin: auto;
 }
 
+@import url('https://fonts.cdnfonts.com/css/ink-free');
+
 /* Homepage content */
 
 .homepage-content {
   display: flex;
+  font-family: 'Ink Free', sans-serif; 
   gap: 70px;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -39,9 +42,10 @@
 /* Homepage title */
 
 .homepage-title {
-  font-family: sans-serif;
+  font-family: 'Ink Free', sans-serif;
   font-size: 120px;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 14px;
   padding-bottom: 7px;
   color: white;
   opacity: 1;
