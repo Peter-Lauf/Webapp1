@@ -163,11 +163,11 @@
 /* modal */
 
 .popup-modal {
-  width: 1200px;
+  width: 1000px;
   max-height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
    url('../stylesheets/images/cvimage2.jpg');
-  background-image: no-repeat;
+  background-repeat: no-repeat;
   -moz-box-shadow: 12px 12px 9px #484848;
     -webkit-box-shadow: 12px 12px 9px #484848;
     box-shadow: 12px 12px 9px #484848;
@@ -176,13 +176,15 @@
   border-color: #484848;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 216%;
   transform: translate(-50%, -50%) scale(0.0001);
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+  z-index: 1000;
 }
 
 .cv {
+  width: 58%;
   border-radius: 10px;
   filter: brightness(0.9);
   filter: grayscale(20%);
@@ -191,12 +193,12 @@
 .open-popup {
   visibility: visible;
   top: 100%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-127%, -39%) scale(1);
 }
 
 .popup-modal object {
   float: left;
-  width: 50%;
+  width: 58%;
 
 }
 
@@ -205,14 +207,14 @@
 }
 
 .popup-modal h2 {
-  width: 45%;
+  width: 40%;
   text-align: center;
   font-family: 'Times New Roman', 'serif';
   font-weight: 800;
   color: rgb(223, 218, 218);
   height: auto;
   word-break: keep-all;
-  font-size: 38px;
+  font-size: 27px;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -222,13 +224,13 @@
 .popup-modal p {
   position: relative;
   color: rgb(223, 218, 218);
-  width: 45%;
+  width: 40%;
   height: 10%;
   float: right;
-  font-size: 25px;
+  font-size: 20px;
   font-family:  'Times New Roman', 'serif';
   font-weight: 800;
-  margin: 18px;
+  margin: 0px 10px 0px 0px;
 }
 
 .close-modal {

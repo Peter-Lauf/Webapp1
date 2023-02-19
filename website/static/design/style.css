@@ -22,12 +22,12 @@
      background-repeat: no-repeat;
      z-index: 1500;
     height: 824px;
-    width: 763px;
+    min-width: 763px;
 	margin: 10px;
 	padding: 0;
 	border: 0;
-    top: 105px;
-    right: 10px;
+    top: -30px;
+    right: 65px;
 	overflow: visible;
 	background-color: transparent;    
     backface-visibility: hidden;

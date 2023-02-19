@@ -1,7 +1,7 @@
 .homepage-wrapper  {
   background-image: linear-gradient(to left, #2e2d2d 0%, black 100%);
-  max-height: 200vh;
-  min-height: 200vh;
+  max-height: 350vh;
+  min-height: 220vh;
   background-size: cover;
   background-repeat: repeat;
   position: relative;
@@ -15,34 +15,31 @@
   margin: auto;
 }
 
-@import url('https://fonts.cdnfonts.com/css/ink-free');
+@import url('https://fonts.cdnfonts.com/css/comic-neue');
 
 /* Homepage content */
 
 .homepage-content {
   display: flex;
-  font-family: 'Ink Free', sans-serif; 
+  font-family: 'Comic Neue', sans-serif; 
   gap: 70px;
   justify-content: flex-start;
   flex-wrap: wrap;
   position: relative;
-  top: 200px;
+  top: 100px;
   left: 0px;
 }
 
 .homepage-content-article {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
   align-self: flex-start;
-  /* align-content: center; */
+
 }
 
 
 /* Homepage title */
 
 .homepage-title {
-  font-family: 'Ink Free', sans-serif;
+  font-family: 'Comic Neue', sans-serif;
   font-size: 120px;
   font-weight: 900;
   letter-spacing: 14px;
@@ -344,6 +341,7 @@
         padding-top: 150px;
         margin-top: 300px;
         margin-left: 100px;
+        z-index: 0;
     }
 
     @keyframes appear3 {
