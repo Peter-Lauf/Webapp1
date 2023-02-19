@@ -20,6 +20,7 @@
   font-size: var(--font-size);
   font-family: "Gluten", sans-serif;
   perspective: 40em;
+  z-index: 1500;
 }
 
 .my-cv {
