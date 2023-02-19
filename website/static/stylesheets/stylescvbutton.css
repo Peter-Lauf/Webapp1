@@ -177,7 +177,7 @@
   border-color: #484848;
   position: absolute;
   top: 0;
-  left: 216%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0.0001);
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
@@ -194,7 +194,7 @@
 .open-popup {
   visibility: visible;
   top: 100%;
-  transform: translate(-127%, -39%) scale(1);
+  transform: translate(-70%, -36%) scale(1);
 }
 
 .popup-modal object {
